@@ -1,33 +1,17 @@
 $(document).ready(function(){
 
 	/*identify the variables*/
-	$('.readmore').click(showReadMoreContent);
-	$('.readless').click(hideReadMoreContent);
-	$('.learnmore').click(hideLearnMoreContent);
-
 
 	/*provide the actions*/
 
-	//Read More action
-	function showReadMoreContent(event){
+	//Features: slide up
+	function slideUpContent(event){
 		event.preventDefault();
-		$('#show-this-on-click').slideDown(2000);
-		$('.readless').show();
-		$('.readmore').hide();
+		$('#show-this-on-click').slideUp(2000);
 	}
 
-	function hideReadMoreContent(event) {
-		event.preventDefault();
-		$('.readless, p#show-this-on-click').slideUp(2000);
-		$('.readless').hide(2000);
-		$('.readmore').show(3000);
-	}
+	/* call the action */
+	$('#hr').click(slideUpContent);
 
-	//Learn More action
-	function hideLearnMoreContent(event){
-		event.preventDefault();
-		$('#learnmoretext').slideDown(2000);
-		$('.learnmore').hide();
-	}
 
 });
