@@ -174,14 +174,11 @@ footer div#copyright {
   width: 50%;
   float: left;
   padding: 20px;
-  border: 1px solid white;
-
 }
 
 footer nav {
   width: 50%;
   float: right;
-  border: 1px solid white;
 }
 
 footer nav ul li {
