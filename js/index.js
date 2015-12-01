@@ -1,17 +1,25 @@
 $(document).ready(function(){
 
-	/*identify the variables*/
+	/* identify the variables */
 
-	/*provide the actions*/
-
-	//Features: slide up
-	function slideUpContent(event){
-		event.preventDefault();
-		$('#show-this-on-click').slideUp(2000);
-	}
+	/* function */
+	// function showFeatureHidden(){
+	// 	$('.featureHidden').show("slow", function() {
+ //    		$(this).slideUp("slow");
+ //  		});
 
 	/* call the action */
-	$('#hr').click(slideUpContent);
+	// $('.featureHidden').hide();
 
+	// $("#features div").hover(function(){
+	// 	$('.featureHidden').slideUp();
+	// });
 
 });
+
+
+		// $(this).slideUp(); //have a black background slide up
+		// $().show();
+		// $(this).addClass();
+		// $(this).html(); //add html text
+		// $(this).click() //goes to it destinated page.
