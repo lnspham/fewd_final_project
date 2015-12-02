@@ -97,8 +97,19 @@ nav ul li:first {
   padding-left: 0;
 }
 
+nav ul li a:hover, nav ul li a:visited {
+  color: #000;
+  font-weight: 700;
+}
+
+nav ul li a:hover, nav ul li a:visited {
+  color: #1D3C8E;
+  font-weight: 700;
+}
+
 #logo {
   margin: 10px 0 10px 35px;
+
 }
 
 #whatWeDo {
@@ -200,5 +211,24 @@ footer nav ul li {
 
 footer nav ul li:first {
   padding-left: 0;
+}
+
+
+@media screen and (max-width: 1200px){
+
+  #logo {
+    width: 25%;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+
+  
+}
+
+@media screen and (max-width: 480px){
+
+  
 }
 

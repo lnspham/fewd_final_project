@@ -10,8 +10,8 @@ $(document).ready(function(){
 
 	 $("#features div").hover(function(){
 
-	 		$(this).show("slow", function(){
-	 			$('.featureHidden').slideUp("slow");
+	 		$('.featureHidden').show(2000, function(){
+	 			$(this).slideUp("slow");
 	 		});
 	 		
 
