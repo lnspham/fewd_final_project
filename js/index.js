@@ -3,17 +3,21 @@ $(document).ready(function(){
 	/* identify the variables */
 
 	/* function */
-	// function showFeatureHidden(){
-	// 	$('.featureHidden').show("slow", function() {
- //    		$(this).slideUp("slow");
- //  		});
+
 
 	/* call the action */
-	// $('.featureHidden').hide();
+	 $('.featureHidden').hide();
 
-	// $("#features div").hover(function(){
-	// 	$('.featureHidden').slideUp();
-	// });
+	 $("#features div").hover(function(){
+
+	 		$(this).show("slow", function(){
+	 			$('.featureHidden').slideUp("slow");
+	 		});
+	 		
+
+	 	
+	 });
+
 
 });
 
