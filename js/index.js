@@ -6,17 +6,17 @@ $(document).ready(function(){
 
 
 	/* call the action */
-	 $('.featureHidden').hide();
+	 // $('.featureHidden').hide();
 
-	 $("#features div").hover(function(){
+	 // $("#features div").hover(function(){
 
-	 		$('.featureHidden').show(2000, function(){
-	 			$(this).slideUp("slow");
-	 		});
+	 // 		$('.featureHidden').show(2000, function(){
+	 // 			$(this).slideUp("slow");
+	 // 		});
 	 		
 
 	 	
-	 });
+	 // });
 
 
 });

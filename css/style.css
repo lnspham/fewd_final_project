@@ -217,14 +217,59 @@ footer nav ul li:first {
 @media screen and (max-width: 1200px){
 
   #logo {
-    width: 25%;
+    width: 25%; /* why you can't do 100% at the top? */
   }
+
+  #features div {
+  width: 280px;
+  height: 280px;
+  }
+
+  #features div img {
+  width: 100%;
+  }
+
+  .featureHidden {
+   top: 701px; 
+  }
+
+  #contactInfo div {
+  width: 381px;
+  }
+
   
 }
 
 @media screen and (max-width: 768px){
 
-  
+  nav {
+  font-size: 16px;
+  padding: 10px 30px;
+  }
+
+  nav ul li {
+  padding-left: 30px;
+  }
+
+  #features div {
+  width: 172px;
+  height: 172px;
+  }
+
+  .featureHidden {
+   top: 572px; 
+  }
+
+  #contactInfo div {
+  width: 237px;
+  }
+
+  footer div#copyright, footer nav ul li{
+    font-size: 12px;
+    width: 40%;
+  }
+
+
 }
 
 @media screen and (max-width: 480px){
