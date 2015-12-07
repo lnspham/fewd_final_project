@@ -46,7 +46,7 @@ Developer @GA in Seattle
 /*******************************************/
 body {
   color: #f0efef;
-  font-size: 26px;
+  font-size: 1.2em;
   line-height: 1.4;
   color: #606161;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
@@ -59,33 +59,46 @@ h1, h2 {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 2.4em;
+}
+
 h2 {
-  font-size: 24px;
+  font-size: 1.4em;
 }
 
 p {
-  font-size: 18px;
+  font-size: .9em;
 }
 
 a {
   text-decoration: none;
 }
 
-nav {
-  font-size: 22px;
-  float: right;
-  padding: 10px 35px;
-}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-/* Center the container 
+/* Center the container */
 .container {
   width: 100%;
   margin: 0 auto;
-}*/
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  font-size: 1.4em;
+  padding: 10px 35px;
+}
+
+nav ul {
+  display: inline-block;
+}
 
 nav ul li {
   list-style-type: none;
@@ -107,9 +120,32 @@ nav ul li a:hover, nav ul li a:visited {
   font-weight: 700;
 }
 
-#logo {
-  margin: 10px 0 10px 35px;
+nav ul li.menu ul {
+  display: none;
+}
 
+nav ul li ul.sub-menu {
+  margin-left: -55px;
+}
+
+nav ul li ul.sub-menu li {
+  font-size: .8em;
+  padding-left: 15px;
+  border: 1px solid black;
+  display: block;
+}
+
+.navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: #BFBCDC;
+  background-image:  url("/images/MyOVSHIghRes-80.png");
+}
+
+.navbar-fixed a:hover, .navbar-fixed a:link {
+  color: #FFF;
 }
 
 #whatWeDo {
@@ -134,7 +170,7 @@ nav ul li a:hover, nav ul li a:visited {
   margin-right: 0;
 }
 
-#features div img {
+#features div span img {
   position: relative;
   width: 100%;
 }
@@ -216,10 +252,6 @@ footer nav ul li:first {
 
 @media screen and (max-width: 1200px){
 
-  #logo {
-    width: 25%; /* why you can't do 100% at the top? */
-  }
-
   #features div {
   width: 280px;
   height: 280px;
@@ -240,11 +272,28 @@ footer nav ul li:first {
   
 }
 
+@media screen and (max-width: 992px){
+  
+  nav {
+  font-size: 1em;
+  padding: 10px 30px;
+  }
+
+  nav ul li {
+  padding-left: 20px;
+  }
+
+  header span img {
+
+  }
+
+}
+
 @media screen and (max-width: 768px){
 
   nav {
   font-size: 16px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   }
 
   nav ul li {
