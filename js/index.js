@@ -15,10 +15,10 @@ $(document).ready(function(){
   	});
 
 	/* navigation call to action */
-	$('nav ul li').click(function(){
-		event.preventDefault();
-		$('this').children('.menu').show();
-	});
+	// $('.menu').click(function(){
+	// 	event.preventDefault();
+	// 	$('ul').show();
+	// });
 
 	/* features call to action action */
 	$('.featureHidden').hide();

@@ -94,6 +94,7 @@ header {
 nav {
   font-size: 1.4em;
   padding: 10px 35px;
+  position:relative;
 }
 
 nav ul {
@@ -103,37 +104,56 @@ nav ul {
 nav ul li {
   list-style-type: none;
   float: left;
-  padding-left: 80px;
+  margin-left: 80px;
+  display: inline-block;
 }
 
 nav ul li:first {
   padding-left: 0;
 }
 
-nav ul li a:hover, nav ul li a:visited {
+nav ul li a:link{
   color: #000;
-  font-weight: 700;
 }
 
 nav ul li a:hover, nav ul li a:visited {
+  display:block;
+  float: left;
+}
+
+nav ul li:hover > a{
   color: #1D3C8E;
   font-weight: 700;
+/*  background-color: #1D3C8E; */
+  padding: 8px 15px;
 }
 
-nav ul li.menu ul {
+nav ul li:hover > ul {
+  display:block;
+}
+
+nav ul ul {
+  font-size: .8em;
+  background: #BEBEBE;
+  padding:0;
+  text-align: center;
+  display:none;
+  width: 100%;
+  margin: 10px 0;
+  position: absolute;
+  top: 110px;
+  left: 0px;
+}
+
+/*li.menu ul {
   display: none;
 }
 
-nav ul li ul.sub-menu {
-  margin-left: -55px;
-}
-
-nav ul li ul.sub-menu li {
+ul.sub-menu {
   font-size: .8em;
-  padding-left: 15px;
   border: 1px solid black;
-  display: block;
-}
+  display: inline-block;
+}*/
 
 .navbar-fixed {
   top: 0;
