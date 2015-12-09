@@ -95,49 +95,49 @@ header {
 /* Navigation
 /*******************************************/
 
-nav {
+header nav {
   font-size: 1.4em;
   padding: 10px 35px;
   position:relative;
 }
 
-nav img {
+header nav img {
   width: 22%;
 }
 
-nav ul {
+header nav ul {
   display: inline-block;
   vertical-align: top;
 }
 
-nav ul li {
+header nav ul li {
   list-style-type: none;
   margin-left: 80px;
   display: inline-block;
 }
 
-nav ul li:first {
+header nav ul li:first {
   padding-left: 0;
 }
 
-nav ul li a:link, nav ul li a:active {
+header nav ul li a:link, header nav ul li a:active {
   color: #000;
 }
 
-nav ul li a:hover, nav ul li a:visited {
+header nav ul li a:hover, header nav ul li a:visited {
   display: inline-block;
 }
 
-nav ul li:hover > a{
+header nav ul li:hover > a{
   color: #1D3C8E;
   font-weight: 400;
 }
 
-nav ul li:hover > ul {
+header nav ul li:hover > ul {
   display:block;
 }
 
-nav ul li ul {
+header nav ul li ul {
   font-size: .8em;
   background: rgba(224, 220, 220, 1);
   padding: 10px 0;
@@ -156,7 +156,6 @@ nav ul li ul {
   position: fixed;
   width: 100%;
   background-color: #BFBCDC;
-  background-image:  url("/images/MyOVSHIghRes-80.png");
 }
 
 .navbar-fixed a:hover, .navbar-fixed a:link {
@@ -201,8 +200,11 @@ nav ul li ul {
   position: absolute;
   width: 100%;
 }
-#features div img {
+
+
+/*#features div img {
 }
+*/
 
 .featureHidden {
    color: #FFF;
@@ -215,7 +217,7 @@ nav ul li ul {
    z-index: 1;
 }
 
-.featureHidden a:link {
+.featureHidden a:link, .featureHidden a:hover, .featureHidden a:active, .featureHidden a:visited {
   color: #FFF;
 }
 
@@ -242,6 +244,22 @@ nav ul li ul {
 #partnerLogos{
   color: #000;
   text-align: center;
+}
+
+/******************************************
+/* Main
+/*******************************************/
+
+.main {
+  padding: 30px;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.main p:first-child:first-letter, span.firstcharacter { 
+  color: #0C153C; 
+  font-size: 2em; 
+  line-height: 1.3em; 
 }
 
 /******************************************
@@ -286,10 +304,6 @@ form {
 form label {
   display: inline-block;
   width: 150px;
-}
-
-form label.radioLabel{
-  width: auto;
 }
 
 form input, form select {
@@ -364,23 +378,32 @@ form input[type=submit] {
 footer {
   background-color: #000;
   color: #FFF;
+  float: left;
+  width: 100%;
 }
 
 footer div#copyright {
   font-size: 14px;
-  width: 50%;
   float: left;
-  padding: 20px;
+  width: 25%;
+  padding: 36px;
 }
 
 footer nav {
-  width: 50%;
+  width: 40%;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   float: right;
+  margin-right: 35px;
 }
 
 footer nav ul li {
   font-size: 14px;
   padding-left: 40px;
+  float: left;
+  padding-top: 16px;
+
 }
 
 footer nav ul li:first {
@@ -392,6 +415,10 @@ footer nav ul li:first {
 /*******************************************/
 
 @media screen and (max-width: 1200px){
+
+  header nav {
+    font-size: 1em;
+  }
 
   #features div {
   width: 280px;
@@ -414,56 +441,67 @@ footer nav ul li:first {
 }
 
 @media screen and (max-width: 992px){
-  
-  nav {
-  font-size: 1em;
-  padding: 10px 30px;
+
+  header nav ul {
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    font-size: .9em;
+    vertical-align: middle;
   }
 
   nav ul li {
-  padding-left: 20px;
+    padding-left: 0;
   }
 
-  header span img {
-
+  header nav ul li ul {
+    top: 70px;
   }
 
-}
-
-@media screen and (max-width: 768px){
-
-  nav {
-  font-size: 16px;
-  padding: 10px 20px;
-  }
-
-  nav ul li {
-  padding-left: 30px;
+  .navbar-fixed {
+    height: 85px;
+    vertical-align: top;
   }
 
   #features div {
-  width: 172px;
-  height: 172px;
+    width: 455px;
+    height: 455px;
+    margin: 10px 10px 10px 10px;
   }
 
   .featureHidden {
-   top: 572px; 
+    top: -10px;
+    left: -10px;
+  }
+
+  form input, form select {
+    width: 242px;
+  }
+
+  form textarea {
+    margin-top: 25px;
+    width: 100%;
   }
 
   #contactInfo div {
-  width: 237px;
+      width: 311px;
+      height: 260px;
   }
 
-  footer div#copyright, footer nav ul li{
-    font-size: 12px;
-    width: 40%;
+  #contactInfo div h2 {
+    font-size: 1.2em;
   }
 
+  #contactInfo div p {
+    font-size: .9em;
+  }
+
+  footer div#copyright {
+    width: 30%;
+  }
+
+  footer nav {
+    width: 50%;
+  }
 
 }
-
-@media screen and (max-width: 480px){
-
-  
-}
-
