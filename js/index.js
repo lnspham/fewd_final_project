@@ -25,9 +25,9 @@ $(document).ready(function(){
 
  	$("#features div").hover(function(){
  		event.preventDefault();
- 		$(this).children('.featureHidden').show(2000);
- 		$(this).children('.featureHidden').toggle();
-	 	
+ 		$(this).children('.featureHidden').show('slow');
+ 	}, function(){
+ 		$(this).children('.featureHidden').hide();
  	});
 
 

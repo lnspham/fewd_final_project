@@ -97,13 +97,17 @@ nav {
   position:relative;
 }
 
+nav img {
+  width: 22%;
+}
+
 nav ul {
   display: inline-block;
+  vertical-align: top;
 }
 
 nav ul li {
   list-style-type: none;
-  float: left;
   margin-left: 80px;
   display: inline-block;
 }
@@ -117,15 +121,12 @@ nav ul li a:link{
 }
 
 nav ul li a:hover, nav ul li a:visited {
-  display:block;
-  float: left;
+  display: inline-block;
 }
 
 nav ul li:hover > a{
   color: #1D3C8E;
-  font-weight: 700;
-/*  background-color: #1D3C8E; */
-  padding: 8px 15px;
+  font-weight: 400;
 }
 
 nav ul li:hover > ul {
@@ -134,26 +135,15 @@ nav ul li:hover > ul {
 
 nav ul ul {
   font-size: .8em;
-  background: #BEBEBE;
-  padding:0;
+  background: rgba(224, 220, 220, 1);
+  padding: 10px 0;
   text-align: center;
   display:none;
   width: 100%;
-  margin: 10px 0;
   position: absolute;
-  top: 110px;
+  top: 70px;
   left: 0px;
 }
-
-/*li.menu ul {
-  display: none;
-}
-
-ul.sub-menu {
-  font-size: .8em;
-  border: 1px solid black;
-  display: inline-block;
-}*/
 
 .navbar-fixed {
   top: 0;
@@ -190,18 +180,32 @@ ul.sub-menu {
   margin-right: 0;
 }
 
-#features div span img {
+#mobile, #sales, #hr, #communication {
   position: relative;
+}
+
+.disappear {
+  position: absolute;
   width: 100%;
+}
+#features div img {
+
+  
 }
 
 .featureHidden {
    color: #FFF;
    text-align: center;
-   position: absolute; 
-   top: 790px; 
+   padding: 10px;
+   height: 100px;
+   position: absolute;
    background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+}
+
+.featureHidden a:link {
+  color: #FFF;
 }
 
 #callToAction {
