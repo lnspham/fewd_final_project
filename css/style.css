@@ -91,6 +91,10 @@ header {
   margin: 0 auto;
 }
 
+/******************************************
+/* Navigation
+/*******************************************/
+
 nav {
   font-size: 1.4em;
   padding: 10px 35px;
@@ -116,7 +120,7 @@ nav ul li:first {
   padding-left: 0;
 }
 
-nav ul li a:link{
+nav ul li a:link, nav ul li a:active {
   color: #000;
 }
 
@@ -133,7 +137,7 @@ nav ul li:hover > ul {
   display:block;
 }
 
-nav ul ul {
+nav ul li ul {
   font-size: .8em;
   background: rgba(224, 220, 220, 1);
   padding: 10px 0;
@@ -141,9 +145,10 @@ nav ul ul {
   display:none;
   width: 100%;
   position: absolute;
-  top: 70px;
+  top: 52px;
   left: 0px;
 }
+
 
 .navbar-fixed {
   top: 0;
@@ -158,12 +163,20 @@ nav ul ul {
   color: #FFF;
 }
 
+/******************************************
+/* What we do
+/*******************************************/
+
 #whatWeDo {
   background-color: #1D3C8E;
   color: #FFF;
   padding: 8px 150px;
   text-align: center;
 }
+
+/******************************************
+/* Features
+/*******************************************/
 
 #features {
   padding: 12px;
@@ -189,8 +202,6 @@ nav ul ul {
   width: 100%;
 }
 #features div img {
-
-  
 }
 
 .featureHidden {
@@ -207,6 +218,10 @@ nav ul ul {
 .featureHidden a:link {
   color: #FFF;
 }
+
+/******************************************
+/* Call to Action
+/*******************************************/
 
 #callToAction {
   background-color: #6EA1BE;
@@ -229,6 +244,101 @@ nav ul ul {
   text-align: center;
 }
 
+/******************************************
+/* Contact
+/*******************************************/
+
+#contact {
+  padding: 30px;
+  color: #000;
+}
+
+#contact h1 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+#contactForm {
+  width: 50%;
+  padding: 15px;
+  margin: 30px;
+  display: inline-block;
+  border: 2px solid #bab4b4;
+  border-radius: 10px;
+}
+
+#location {
+  width: 35%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/******************************************
+/* Form
+/*******************************************/
+form {
+  color: #000;
+  margin-bottom: 80px;
+  margin: 0 auto;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+}
+
+form label.radioLabel{
+  width: auto;
+}
+
+form input, form select {
+  border: none;
+  border-top: none;
+  border-left: none;
+  border-bottom: 2px solid #000;
+  border-right: none;
+  padding-bottom: 8px;
+  width: 400px;
+  outline: none;
+  margin-left: 10px;
+}
+
+form textarea {
+  margin-top: 25px;
+}
+
+form input, form textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(157, 169, 255, 1);
+  border: 1px solid rgba(157, 169, 255, 1);
+}
+
+form input[type=submit] {
+  background-color: #0C153C;
+  color: #FFF;
+  padding: 20px 0;
+  border-bottom: 0;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 150px;
+  margin: 10px 0;
+}
+
+.form-row {
+  margin: 8px;
+}
+
+/******************************************
+/* Contact Information
+/*******************************************/
+
 #contactInfo {
   background-color: #0C153C;
   color: #FFF;
@@ -246,6 +356,10 @@ nav ul ul {
 #contactInfo div.last {
   border-right: none;
 }
+
+/******************************************
+/* Footer
+/*******************************************/
 
 footer {
   background-color: #000;
@@ -273,6 +387,9 @@ footer nav ul li:first {
   padding-left: 0;
 }
 
+/******************************************
+/* Media Queries
+/*******************************************/
 
 @media screen and (max-width: 1200px){
 
