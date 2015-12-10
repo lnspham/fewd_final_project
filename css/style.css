@@ -329,7 +329,7 @@ form input, form textarea {
   -o-transition: all 0.30s ease-in-out;
 }
  
-input[type=text]:focus, textarea:focus {
+input:focus, textarea:focus {
   box-shadow: 0 0 5px rgba(157, 169, 255, 1);
   border: 1px solid rgba(157, 169, 255, 1);
 }
@@ -437,6 +437,10 @@ footer nav ul li:first {
   width: 381px;
   }
 
+  form textarea {
+    width: 100%;
+  }
+
   
 }
 
@@ -478,11 +482,6 @@ footer nav ul li:first {
     width: 242px;
   }
 
-  form textarea {
-    margin-top: 25px;
-    width: 100%;
-  }
-
   #contactInfo div {
       width: 311px;
       height: 260px;
@@ -502,6 +501,50 @@ footer nav ul li:first {
 
   footer nav {
     width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 414px){
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav img {
+    width: 50%;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .blue {
+    height: 3px;
+    width: 36px;
+    background-color: #0C153C;
+    margin: 5px;
+  }
+
+  .toggleHamburger {
+    display: block;
+  }
+
+  #whatWeDo {
+    padding: 8px 50px;
+  }
+
+  #features div {
+    width: 415px;
+    height: 415px;
+    padding: 0;
+    margin: 0 0 0 -5px;
   }
 
 }

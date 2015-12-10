@@ -30,6 +30,13 @@ $(document).ready(function(){
  		$(this).children('.featureHidden').hide();
  	});
 
+ 	/* Hamburger call to action action */
+ 	function menu (){
+		$('header nav ul').toggleClass('toggleHamburger');
+	};
+
+	$('.hamburger').click(menu);
+
 
 
 });
